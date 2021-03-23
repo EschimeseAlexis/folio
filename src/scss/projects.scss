@@ -1,1 +1,118 @@
 @import "essential";
+
+main {
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: "spartanthin bold", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    position: relative;
+    top: 20px;
+  }
+
+  .my-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
+    width: 80%;
+    padding: 3rem;
+
+    .project-top,
+    .project-bottom {
+      display: flex;
+      padding: 3rem;
+    }
+
+    .project {
+      background-color: white;
+      width: 250px;
+      height: 220px;
+      border-radius: 5px;
+      position: relative;
+      box-shadow: 0 10px 3px rgba(255, 255, 255, 0.7);
+      padding: 1rem;
+      transform-origin: center center 0;
+      transition: all .5s ease-out;
+      animation-name: animate;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      transform: perspective(800px) rotateX(40deg);
+
+      h2 {
+        border-bottom: 1px black solid;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        color: black;
+        font-family: "spartanthin bold", sans-serif;
+        font-weight: 500;
+      }
+
+      p {
+        padding: 1rem;
+        color: black;
+        font-size: 0.8rem;
+
+        span {
+          font-family: "spartanthin bold", sans-serif;
+          font-weight: 500;
+          color: black;
+        };
+      }
+
+      &:nth-of-type(1) {
+        transform: perspective(800px) rotateX(40deg) rotateZ(-2deg);
+      }
+
+      &:nth-of-type(2) {
+        animation-delay: 0.2s;
+      }
+
+      &:nth-of-type(3) {
+        animation-delay: 0.4s;
+        transform: perspective(800px) rotateX(40deg) rotateZ(2deg);
+      }
+
+      &:nth-of-type(4) {
+        animation-delay: 0.6s;
+        transform: perspective(800px) rotateX(40deg) rotateZ(-2deg);
+      }
+
+      &:nth-of-type(5) {
+        animation-delay: 0.8s;
+      }
+
+      &:nth-of-type(6) {
+        animation-delay: 1s;
+        transform: perspective(800px) rotateX(40deg) rotateZ(2deg);
+      }
+
+      @keyframes animate {
+        0% {
+          top: 0;
+        }
+        50% {
+         top: 10px;
+        }
+        100% {
+          top: 0;
+        }
+      }
+
+      &:hover {
+        animation: unset;
+        transform: perspective(800px) rotateX(0deg);
+        box-shadow: none;
+      }
+    }
+  }
+}

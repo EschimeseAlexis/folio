@@ -1,7 +1,3 @@
-/**
- * CURSOR
- */
-
 const cursor = document.querySelector(".cursor");
 let hover = document.querySelectorAll(".hover");
 let hoverAlt = document.querySelectorAll(".hover-alt");
@@ -35,4 +31,11 @@ if (hoverAlt) {
             cursor.classList.remove("cursor-grow-alt");
         };
     });
+}
+
+const button = document.querySelector(".hamburger-button");
+const menu = document.querySelector(".hamburger-menu");
+
+button.onclick = () => {
+    menu.classList.toggle("hamburger-menu-active");
 }

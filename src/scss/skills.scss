@@ -1,1 +1,67 @@
 @import "essential";
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    font-family: "spartanthin bold", sans-serif;
+    font-weight: normal;
+
+    span {
+      font-size: 0.8rem;
+      position: relative;
+      top: 20px;
+    }
+  }
+
+  .my-skills {
+    display: flex;
+
+    ul {
+      list-style: none;
+      padding: 2rem;
+
+      li {
+        padding: 1rem;
+        overflow: hidden;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #ffffff;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        &:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+
+        span {
+          position: relative;
+          top: 10px;
+          margin-right: 1rem;
+
+          img{
+            width: 30px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

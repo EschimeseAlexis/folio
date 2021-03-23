@@ -1,0 +1,16 @@
+.transition {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  list-style: none;
+  z-index: 10000;
+
+  .transition-panel {
+    width: 20vw;
+    background-color: #070707;
+    transform: scaleY(200);
+    transition: all 0.8s ease-in-out;
+    z-index: 10000;
+  }
+}

@@ -1,1 +1,57 @@
 @import "essential";
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: "spartanthin bold", sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+  }
+
+  span {
+    font-size: 0.8em;
+    position: absolute;
+    top: 70%;
+  }
+
+  ul {
+    padding: 4rem;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 33%;
+
+      &.button-wrapper {
+        font-size: 1rem;
+        border-bottom: none;
+
+        a {
+          border-bottom: 1px solid white;
+        }
+      }
+
+      img {
+        height: 20px;
+        width: 20px;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

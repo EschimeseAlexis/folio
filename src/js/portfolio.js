@@ -48,7 +48,7 @@ arrowUp.onclick = () => {
     setTimeout(fadeIn, 700);
 }
 
-arrowDown.onclick = (event) => {
+arrowDown.onclick = () => {
     disableButton();
     fadeOut();
     acc = (acc + 1) % 4;

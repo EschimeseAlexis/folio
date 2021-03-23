@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/html/portfolio.html",
-    "build": "parcel build src/html/portfolio.html"
+    "dev": "parcel src/html/landingpage.html",
+    "build": "parcel build src/html/landingpage.html"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +14,9 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "@swup/overlay-theme": "^1.1.1",
+    "gsap": "^3.6.0",
     "swup": "^2.0.14"
   }
 }
