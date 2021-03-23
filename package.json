@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/html/landingpage.html",
-    "build": "parcel build src/html/landingpage.html"
+    "dev": "parcel landingpage.html",
+    "build": "parcel build landingpage.html"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "@barba/core": "^2.9.7",
     "@swup/overlay-theme": "^1.1.1",
     "gsap": "^3.6.0",
+    "jekyll": "^3.0.0-beta1",
     "swup": "^2.0.14"
   }
 }
