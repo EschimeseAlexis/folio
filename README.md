@@ -14,3 +14,6 @@ To see my Folio you may have to install node dependencies.
 ## Technologies
 
 This folio was done by using **Parcel Bundler**, **HTML**, **SCSS** and **Vanilla JS**. The responsiveness is still to be done, I work on it in my free time but I don't have much at the moment. Thank you for your comprehension.
+
+## Preview
+![alt text](/src/img/Preview.png)
