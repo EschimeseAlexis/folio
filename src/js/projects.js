@@ -10,3 +10,28 @@ projectsCards.forEach(project => {
         cursor.style.border = "1px solid white";
     }
 })
+
+const link = document.querySelectorAll("a");
+
+const displayCards = () => {
+    projectsCards.forEach(card => {
+            card.style.opacity = "1";
+    });
+}
+
+link.forEach(li => {
+    li.onmouseover = () => {
+        hideCards();
+    }
+    li.onmouseleave = () => {
+        displayCards();
+    }
+});
+
+const hideCards = () => {
+    projectsCards.forEach(card => {
+        card.style.opacity = "0";
+    });
+}
+
+setTimeout(displayCards, 1000);
